@@ -1,0 +1,45 @@
+package xddd;
+import java.util.Scanner;
+
+public class d {
+	public static void main(String args[]) {
+		//System.out.println("Seleccione un numero: ");
+		Scanner scanner = new Scanner (System.in);
+		//double num = scanner.nextDouble();
+		System.out.println("Seleccione una opcion: sumar(1), restar(2), dividir(3), multiplicar(4): ");
+		double a = scanner.nextDouble();
+		if (a == 1) {
+			System.out.println("Ingrese el primer numero: ");
+			double b = scanner.nextDouble();
+			System.out.println("Ingrese el segundo numero: ");
+			double c = scanner.nextDouble();
+			double d = b + c;
+			System.out.println("La suma de " + b + " + " + c + " es: " + d);
+		}
+		else if (a == 2) {
+			System.out.println("Ingrese el primer numero: ");
+			double b = scanner.nextDouble();
+			System.out.println("Ingrese el segundo numero: ");
+			double c = scanner.nextDouble();
+			double d = b - c;
+			System.out.println("La resta de " + b + " - " + c + " es: " + d);
+		}
+		if (a == 3) {
+			System.out.println("Ingrese el primer numero: ");
+			double b = scanner.nextDouble();
+			System.out.println("Ingrese el segundo numero: ");
+			double c = scanner.nextDouble();
+			double d = b / c;
+			System.out.println("La division de " + b + " / " + c + " es: " + d);
+		}
+		if (a == 4) {
+			System.out.println("Ingrese el primer numero: ");
+			double b = scanner.nextDouble();
+			System.out.println("Ingrese el segundo numero: ");
+			double c = scanner.nextDouble();
+			double d = b * c;
+			System.out.println("La multiplicacion de " + b + " * " + c + " es: " + d);
+		}
+	}
+
+}
